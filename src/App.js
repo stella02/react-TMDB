@@ -61,7 +61,7 @@ class App extends Component {
 		
 		
 		<Footer style={{ textAlign: 'center' }}>
-		  Ant Design ©2018 Created by Ant UED
+		  Ant Design ©2018 Created by Stella
 		</Footer>		
       </Layout>
 	</HashRouter>

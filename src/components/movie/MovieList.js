@@ -47,7 +47,10 @@ class MovieList extends Component{
 		
 		var subURL 
 		if(this.state.sortType ==='theater'){
-			subURL= '&primary_release_date.gte=2019-02-15&primary_release_date.lte=2019-03-11';
+			let dateObj ={}
+			this.getDate(dateObj);
+			//console.log(dateObj)
+			subURL= '&primary_release_date.gte='+dateObj.b+'&primary_release_date.lte='+dateObj.c;
 		}
 		if (this.state.sortType  ==='highRate'){
 			subURL = '&sort_by=vote_average.desc';
@@ -145,6 +148,20 @@ class MovieList extends Component{
 		this.props.history.push('/movie/'+this.state.sortType+'/'+page);
 	
 	}
+	
+	getDate(obj){
+		let curr, before;
+		let c = new Date();
+		curr = c.getFullYear() + '-'+ (c.getMonth()+1) + '-' + c.getDate();
+		let b = new Date(c.setDate(c.getDate() - 14));
+		before = b.getFullYear() + '-'+ (b.getMonth()+1) + '-' + b.getDate();
+		obj.c = curr;
+		obj.b = before;
+		return obj;
+
+		
+	}
+	
 }
 
 
