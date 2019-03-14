@@ -1,0 +1,27 @@
+App Directory
+New! Once you have completed your application, add it to the app directory!
+
+API Key (v3 auth)
+6124b5a0aa054c78ecca14345f2041e5
+API Read Access Token (v4 auth)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTI0YjVhMGFhMDU0Yzc4ZWNjYTE0MzQ1ZjIwNDFlNSIsInN1YiI6IjVjODE4MzRjYzNhMzY4NGU4ZmQ2YTUwYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.THH949-1je0xx595fUd160NO0gtywS-9EqmEHuetCDo
+Example API Request
+https://api.themoviedb.org/3/movie/550?api_key=6124b5a0aa054c78ecca14345f2041e5
+
+
+
+// sort by popularity
+https://api.themoviedb.org/3/discover/movie?api_key=6124b5a0aa054c78ecca14345f2041e5&language=en-US&sort_by=popularity.desc&with_genres=18&primary_release_year=2019
+// release on 2019
+https://api.themoviedb.org/3/discover/movie?api_key=6124b5a0aa054c78ecca14345f2041e5&with_genres=18&primary_release_year=2019
+
+What movies are in theatres?
+URL: /discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22
+
+https://api.themoviedb.org/3/discover/movie?api_key=6124b5a0aa054c78ecca14345f2041e5&with_genres=18&date.gte=2019-02-15&primary_release_date.lte=2019-03-02
+
+https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg
+
+search by id 584038
+
+http://api.themoviedb.org/3/movie/584038?api_key=6124b5a0aa054c78ecca14345f2041e5

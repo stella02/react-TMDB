@@ -1,0 +1,30 @@
+.box{
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 200px;
+  margin: 6px;
+  box-shadow:  0 0 6px #ddd;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+ 
+
+  .img{
+	margin-top: 5px;
+    width: 100px;
+    height: 140px;
+  }
+  .tl{
+	color: #42f48c;
+	font-weight: bold;
+	margin-top: 3px
+
+  }
+
+
+  &:hover{
+    opacity: 0.85;
+    transform: rotate(1deg) scale(1.03);
+  }
+}
